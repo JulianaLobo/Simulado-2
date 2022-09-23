@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos felinos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>
+            <img src="img/gato01.gif" onclick="mensagemOla()">
+            <p>Clique em mim!</p>
+        </div>
+        <div>
+            <img src="img/gato02.gif" onclick="incrementaCarinho()">
+            <p>Clique sobre mim várias vezes!</p>
+            <p>Carinhos: <span id="numCarinho">0</span></p>
+        </div>
+        <div>
+            <img id="gatinho3" src="img/gato03.gif" onmouseover="alteraImagem()" onmouseout="restauraImagem()">
+            <p>Passe o cursor do mouse sobre mim!</p>
+        </div>
+        <div>
+            <img src="img/gato04.gif" onmouseover="alteraTexto()" onmouseout="restauraTexto()">
+            <p id="txtGatinho4">lá lá lá lá lá</p>
+        </div>
+        <div>
+            <img src="img/gato05.gif"><br>
+            <input class="btn-sorte" type="button" value="Gerar número da sorte" onclick="gerarNumeroAleatorio()"><br>
+            <input type="text" id="numeroAleatorio" disabled>
+        </div>
+    </div>
+</body>
+
+</html>
